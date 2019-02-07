@@ -1,5 +1,7 @@
 {
-  "name": "otrapruebanube",
-  "integrations": {},
+  "name": "io.otraprueba.nube",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
