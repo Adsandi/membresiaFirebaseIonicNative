@@ -8,15 +8,18 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { Firebase } from '@ionic-native/firebase';
+import { AuthProvider } from '../providers/auth/auth';
 
 var config = {
-  apiKey: "AIzaSyBbQPTdeetT6bteuzaRUMAaaFyJXxlUltc",
-  authDomain: "pruebanube-8d38c.firebaseapp.com",
-  databaseURL: "https://pruebanube-8d38c.firebaseio.com",
-  projectId: "pruebanube-8d38c",
-  storageBucket: "pruebanube-8d38c.appspot.com",
-  messagingSenderId: "612600142016"
+  apiKey: "AIzaSyDC1_SuYgPSsD_qmX4snaMdXy7r7aw-NyA",
+  authDomain: "membresiafirebaseionic.firebaseapp.com",
+  databaseURL: "https://membresiafirebaseionic.firebaseio.com",
+  projectId: "membresiafirebaseionic",
+  storageBucket: "membresiafirebaseionic.appspot.com",
+  messagingSenderId: "570443073464"
 };
+Firebase.initializeApp(config);
+
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +37,8 @@ var config = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider
     
   ]
 })
